@@ -4,6 +4,12 @@ def isVowel(ch):
 	str = "aeiouAEIOU"
 	return (str.find(ch) != -1)
 
-# Driver Code
-print('a is '+str(isVowel('a')))
-print('x is '+str(isVowel('x')))
+
+# Take input
+ch = input("Enter a character: ")
+
+# Check if the character is a vowel
+if (isVowel(ch)):
+	print(ch, "is a vowel.")
+else:
+	print(ch, "is a consonant.")
